@@ -79,6 +79,7 @@ def main():
                            (dados_filtrados["faixa_etaria"] != "FEMININO")]
 
     total_idade = total_faixa_etaria["faixa_etaria"].value_counts().reset_index().rename(columns={"index":"Faixa_Etaria", "faixa_etaria":"Total"})
+    st.write(total_idade)
 
     # Criação do gráfico de Treemap
     fig3 = px.treemap(total_idade, path=['Faixa_Etaria'], values="Total", title="Total de Vacinados por Faixa Etária",
