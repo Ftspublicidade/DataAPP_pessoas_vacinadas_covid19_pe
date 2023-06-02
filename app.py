@@ -78,7 +78,7 @@ def main():
                             (dados_filtrados["faixa_etaria"] != "54 - JANSSEN COVID-19 VACCINE (JOHNSON & JOHNSON)") &
                            (dados_filtrados["faixa_etaria"] != "FEMININO")]
 
-    total_idade = total_faixa_etaria["faixa_etaria"].value_counts().reset_index().rename(columns={"index":"Faixa_Etaria", "faixa_etaria":"Total"})
+    total_idade = total_faixa_etaria["faixa_etaria"].value_counts().reset_index()
     st.write(total_idade)
     st.write(total_idade["Total"])
     st.write(total_idade["Count"])
