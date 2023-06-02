@@ -79,7 +79,7 @@ def main():
                            (dados_filtrados["faixa_etaria"] != "FEMININO")]
 
     total_idade = total_faixa_etaria["faixa_etaria"].value_counts().reset_index().rename(columns={"index":"Faixa_Etaria", "faixa_etaria":"Total"})
-    total = pd.to_DataFrame(total_idade)
+    total = pd.DataFrame(total_idade)
     st.write(total)
     st.write(total.columns)
     
