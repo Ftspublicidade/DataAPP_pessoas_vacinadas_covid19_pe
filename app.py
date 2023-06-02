@@ -80,7 +80,7 @@ def main():
 
     total_idade = total_faixa_etaria["faixa_etaria"].value_counts().reset_index()
     st.write(total_idade)
-    st.write(total_idade["Total"])
+    st.write(total_idade["faixa_etaria"])
     st.write(total_idade["Count"])
     
     
