@@ -80,8 +80,9 @@ def main():
 
     total_idade = total_faixa_etaria["faixa_etaria"].value_counts().reset_index().rename(columns={"index":"Faixa_Etaria", "faixa_etaria":"Total"})
     total = pd.DataFrame(total_idade)
+    total.rename(columns={"Total":"Faixa_Etaria","Count":"Total"})
     st.write(total)
-    st.write(total.columns)
+    
     
     
 
