@@ -79,8 +79,7 @@ def main():
                            (dados_filtrados["faixa_etaria"] != "FEMININO")]
 
     total_idade = total_faixa_etaria["faixa_etaria"].value_counts()
-    st.write(total_idade.index)
-    st.write(total_idade.values)
+    
     
     
     
