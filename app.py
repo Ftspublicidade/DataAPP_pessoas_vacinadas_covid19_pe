@@ -83,7 +83,7 @@ def main():
     
 
     # Criação do gráfico de Treemap
-    fig3 = px.treemap(total_idade, path=['Total', 'Count'], values=['Total', 'count'], title="Total de Vacinados por Faixa Etária",
+    fig3 = px.treemap(total_idade, path=['Total'], values=['count'], title="Total de Vacinados por Faixa Etária",
                 color_discrete_sequence=px.colors.qualitative.Dark2)
     # Atualizar o layout para centralizar o título
     fig3.update_layout(title_x=0.5)
