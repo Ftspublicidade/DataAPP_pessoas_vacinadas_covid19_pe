@@ -80,6 +80,8 @@ def main():
 
     total_idade = total_faixa_etaria["faixa_etaria"].value_counts().reset_index().rename(columns={"index":"Faixa_Etaria", "faixa_etaria":"Total"})
     st.write(total_idade)
+    st.write(total_idade["Total"]
+    st.write(total_idade["Count"]
     
     
     
