@@ -35,6 +35,8 @@ total_faixa_etaria = df.dropna(subset=["faixa_etaria"])
 
 
 def main():
+    
+    st.set_page_config(page_title="Vacinados", page_icon="💉", layout="wide", initial_sidebar_state="expanded")
 
     st.title("Análise Pessoas Vacinadas Contra Covid-19 em PE em 2022")
 
